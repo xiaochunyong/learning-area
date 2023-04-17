@@ -27,6 +27,20 @@
       }
 
       /* Add your flexbox CSS below here */
+      div {
+        display: flex;
+        align-items: center;  /*交叉轴(垂直)对齐*/
+        justify-content: space-around;  /*主轴(水平)对齐*/
+      }
+
+      button:first-child {
+        align-self: flex-end;
+        order: 1;
+      }
+      button:last-child {
+        order: -1;
+      }
+
 
       
     </style>

@@ -37,6 +37,21 @@
         display: flex;
       }
 
+      article {
+        /*flex: 200px; 最小宽度*/
+        /*flex: 1; 比例*/
+
+        /* flex = flex-grow + flex-shrink + flex-basis */
+        flex: 1 200px;
+
+        flex-grow: 1; /*比例*/
+        flex-shrink: 1; /*比例*/
+        flex-basis: 200px; /*最小宽度*/
+      }
+      article:nth-of-type(3) {
+        flex: 2 200px;
+      }
+
       
     </style>
   </head>

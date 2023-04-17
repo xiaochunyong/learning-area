@@ -35,12 +35,16 @@
 
       section {
         display: flex;
-        flex-direction: row;
+        /*flex-direction: row-reverse;*/
+        /*flex-wrap: wrap;*/
+        /* flex-flow = flex-wrap + flex-direction*/
+        flex-flow: row wrap;
       }
 
       article {
-        
+        flex: 330px; /* 至少200px */
       }
+
 
 
     </style>
